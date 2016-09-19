@@ -1,6 +1,8 @@
 ##JWTAuth 
 
 
+Before view v1: https://github.com/hiennv219/api-basic-jwtauth-v1
+
 ####Config/app.php
 
 	Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
