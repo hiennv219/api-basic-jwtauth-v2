@@ -3,6 +3,25 @@
 
 Before view v1: https://github.com/hiennv219/api-basic-jwtauth-v1
 
+
+
+Step 1:
+
+	Create database
+	
+Step 2: Run composer to build db
+
+	php artisan migrate	
+
+
+#SOURCECODE
+
+#### composer.json
+
+    "tymon/jwt-auth": "^0.5.9",
+
+
+
 ####Config/app.php
 
 	Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
