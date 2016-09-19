@@ -62,6 +62,12 @@ To create key JWT in `config/app.php`
 
 ####routes.php
 
+
+	$api->version('v1',function($api){
+		$api->post('authenticate', 'App\Http\Controllers\Auth\AuthController@authenticate');
+	});
+
+
 	$api->version('v1', ['middleware' => 'jwt.auth'], function($api){
 
 		$api->get('users', 'App\Http\Controllers\Auth\AuthController@index');
@@ -146,4 +152,18 @@ Note, commit __construct:
     //     $this->middleware('guest', ['except' => 'getLogout']);
     // }
 
+	
+	
+###URL
 
+fetch token
+
+	http://api.com/api/authenticate
+
+Add input token = ????
+
+	http://api.com/api/users
+	
+	http://api.com/api/users/{user_id}
+	
+	http://api.com/api/token
